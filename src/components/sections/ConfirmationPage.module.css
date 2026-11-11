@@ -1,0 +1,5 @@
+.confirmation { min-height: 55vh; padding: 100px 20px; background: #f2f2f2; text-align: center; }
+.confirmation h1 { color: #111c26; }
+.confirmation p { color: #61788c; font-size: 1.2rem; }
+.link { display: inline-block; margin-top: 20px; padding: 10px 20px; border-radius: 8px; background: #bf8c80; color: #fff; text-decoration: none; transition: background-color 0.3s ease; }
+.link:hover { background: #a86d65; }

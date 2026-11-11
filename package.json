@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "dev": "node ./node_modules/next/dist/bin/next dev",
+    "build": "node ./node_modules/next/dist/bin/next build",
+    "build:staging": "npm run build && node ./scripts/prepare-staging.mjs",
+    "start": "node ./node_modules/next/dist/bin/next start",
+    "lint": "node ./node_modules/eslint/bin/eslint.js .",
+    "typecheck": "node ./node_modules/typescript/bin/tsc --noEmit",
+    "test:tracking": "node ./scripts/verify-tracking.mjs",
+    "test:staging-routes": "node ./scripts/verify-staging-routes.mjs"
   },
   "dependencies": {
     "next": "16.4.6",

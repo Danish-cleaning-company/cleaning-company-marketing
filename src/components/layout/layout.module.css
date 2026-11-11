@@ -1,0 +1,42 @@
+.header,
+.footer {
+  padding: 1.5rem clamp(1rem, 4vw, 4rem);
+  background: #111c26;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header a,
+.footer a {
+  color: inherit;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+@media (max-width: 48rem) {
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

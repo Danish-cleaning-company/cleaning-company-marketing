@@ -1,0 +1,23 @@
+.job-page {
+  min-height: 60vh;
+  padding: clamp(64px, 8vw, 110px) 20px 90px;
+  color: #111c26;
+  background: radial-gradient(circle at 88% 5%, rgb(191 140 128 / 22%), transparent 28rem), linear-gradient(180deg, #f2f2f2 0%, #fff 72%);
+}
+
+.job-intro { max-width: 820px; margin: 0 auto; text-align: center; }
+.job-eyebrow { margin: 0 0 18px; color: #a86d65; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.16em; }
+.job-intro h1 { max-width: 700px; margin: 0 auto 22px; font-size: clamp(2.4rem, 6vw, 4.5rem); line-height: 1.02; letter-spacing: -0.04em; }
+.job-lead { max-width: 680px; margin: 0 auto; color: #4b5d6b; font-size: clamp(1.05rem, 2vw, 1.3rem); line-height: 1.7; }
+.job-details { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 36px 0 58px; padding: 0; list-style: none; }
+.job-details li { padding: 11px 18px; border: 1px solid rgb(17 28 38 / 16%); border-radius: 999px; background: rgb(255 255 255 / 78%); font-size: 0.9rem; font-weight: 650; box-shadow: 0 8px 24px rgb(17 28 38 / 6%); }
+.job-application-intro { max-width: 600px; margin: 0 auto 28px; padding-left: 22px; border-left: 4px solid #bf8c80; }
+.job-application-intro h2 { margin: 0 0 10px; font-size: clamp(1.55rem, 3vw, 2rem); }
+.job-application-intro p { margin: 0; color: #4b5d6b; line-height: 1.65; }
+.job-form-placeholder { max-width: 600px; min-height: 160px; margin: 0 auto; }
+
+@media (max-width: 600px) {
+  .job-page { padding: 48px 16px 64px; }
+  .job-details { margin: 30px 0 46px; }
+  .job-details li { flex: 1 1 calc(50% - 12px); min-width: 140px; }
+}
